@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(135deg, #c8dff6, #010f1f);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #020525;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #edebeb;
+}
+
+/* تصویر پروفایل */
+#about img.rounded-circle {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 3px solid #b4ef13;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#about img.rounded-circle:hover {
+  transform: rotateY(15deg) rotateX(5deg) scale(1.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* کارت‌ها */
+.card {
+  background-color: #ffffff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* بیو */
+#about .p-4 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* فرم تماس با ما */
+form input,
+form textarea {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #888;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* بخش مهارت‌ها */
+#skills .p-3 {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+#skills .p-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress-bar {
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  transition: width 4s ease-in-out;
+}
+
+#navbarNav {
+  border-radius: 20px;
+}
+
+/* Social Buttons (GitHub و Telegram) */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-btn.github {
+  background-color: #333;
+}
+
+.social-btn.telegram {
+  background-color: #0088cc;
+}
+
+.social-btn:hover {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
